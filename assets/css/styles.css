@@ -1,0 +1,135 @@
+body {
+    overflow-x: hidden;
+    background: #fff;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+#banner-hero_mobile {
+    width: 100%;
+    height: auto;
+}
+
+#header-logo {
+    width: 120px;
+    padding-top: 25px;
+    padding-left: 35px;
+    padding-bottom: 25px;
+}
+
+
+main {
+    text-align: center;
+    width: 100%;
+}
+
+.main-title {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 300;
+    font-size: 2.5em;
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+
+.main-title_enphasys {
+    color: var(--dark-grayish-red);
+}
+
+.main-description {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 35px 10px;
+}
+
+.main-form {
+    position: relative;
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 350px;
+}
+
+.main-form_input {
+    line-height: 3;
+    width: 100%;
+    padding-right: 80px;
+    padding-left: 20px;
+    border: 1px solid var(--desaturated-red);
+    outline: none;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: all .1s linear;
+}
+
+.main-form_input::placeholder {
+    font-weight: 700;
+    color: var(--desaturated-red);
+    opacity: 0.5;
+}
+
+.main-form_input-error {
+    padding-right: 115px;
+    border: 1px solid var(--soft-red);
+}
+
+.error_img {
+    visibility: hidden;
+    position: absolute;
+    opacity: 0;
+    top: 20px;
+    right: 85px;
+    margin: auto;
+    z-index: 10;
+    transition: all .2s ease-in;
+}
+
+.main-form_button {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    background-image: var(--linear-gradient-two);
+    position: absolute;
+    top: 10px;
+    right: 0;
+    box-shadow: 0 8px 10px -3px var(--desaturated-red);
+    width: 75px;
+    height: 41.98px;
+    border: 1px solid var(--desaturated-two);
+    border-radius: 50px;
+}
+
+.main-form_button:active {
+    cursor: pointer;
+    background-image: var(--soft-red);
+    box-shadow: 0 8px 10px -3px var(--soft-red);
+}
+
+.button-arrow {
+    text-align: center;
+    width: 10px;
+}
+
+.span-error-msg{
+    visibility: hidden;
+    color: var(--soft-red);
+    opacity: 0;
+    font-size: 12px;
+    position: absolute;
+    left: 20px;
+    bottom: 3px;
+    transition: all .2s linear;
+}
+
+.display{
+    visibility: visible;
+    opacity: 1;
+    transition: all .2s ease-in;
+}
