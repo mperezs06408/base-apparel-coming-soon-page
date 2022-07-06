@@ -1,2 +1,55 @@
-@media only screen and (max-width: 610px){
+@media only screen and (min-width: 600px) {
+    body{
+        background-image: url('../img/hero-desktop.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #container{
+        background-image: var(--linear-gradient-one);
+        opacity: .84;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        width: 600px;
+        padding-top: 40px;
+        padding-left: 50px;
+    }
+    #header-logo{
+        width: fit-content;
+    }
+    #banner-hero_mobile{display: none;}
+    main {
+        width: 600px;
+        height: 100vh;
+        margin: auto;
+        padding: 80px 50px 0 50px;
+    }
+}
+
+@media only screen and (min-width: 830px) {
+    body {
+        background:url('../img/hero-desktop.jpg') right top no-repeat;
+        background-position:fixed; 
+        background-repeat: no-repeat;
+        background-color: hsl(0, 100%, 98%);
+    }
+    #container{
+        /*background-image: url('../img/bg-pattern-desktop.svg');*/
+        background-image: var(--linear-gradient-one);
+        background-color: hsl(0, 100%, 98%);
+        max-width: 830px;
+        opacity: 1;
+    }
+    main {
+        text-align: left;
+        padding: 10px 50px 0 50px;
+    }
+    .main-title{
+        font-size: 3em;
+        letter-spacing: 15px;
+        padding: 0 30px;
+    }
 }
